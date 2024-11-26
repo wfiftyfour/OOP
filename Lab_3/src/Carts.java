@@ -41,5 +41,16 @@ public class Carts {
         }
         return total;
     }
+    	public void printCarts() {
+   		 int i=1;
+   		 System.out.println("***********************CART***********************");
+   		 System.out.println("Ordered Items:");
+   		 for (DigitalVideoDisc dvd : itemsOrdered) {
+   			 System.out.println(i + ". "+ dvd.toString()+ "$");
+   			 i++;
+   		 }
+   		 System.out.println("Total cost: " + this.totalCost());
+   		 System.out.println("**************************************************");
+   	}
 }
 
