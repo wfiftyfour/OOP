@@ -70,6 +70,12 @@ public class DigitalVideoDisc {
 	public String toString() {
 		return this.getTitle() + " - " + this.getCategory() + " - " + this.getDirector() + " - " + this.getLength() + " : " + this.getCost();
 	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	
 }
