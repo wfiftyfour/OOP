@@ -1,0 +1,34 @@
+package Lab_1;
+import java.util.Scanner;
+public class bai2_2_6c {
+	public static void main(String[] args) {
+		  Scanner scanner = new Scanner(System.in);
+	        System.out.println("Nhap he so cua phuong trinh (ax^2 + bx + c = 0):");
+	        System.out.print("a: ");
+	        double a = scanner.nextDouble();
+	        System.out.print("b: ");
+	        double b = scanner.nextDouble();
+	        System.out.print("c: ");
+	        double c = scanner.nextDouble();
+	        double delta = b * b - 4 * a * c;
+	        if (a == 0) {
+	            System.out.println("Day khong phai la phuong trinh bac 2 (a = 0).");
+	        } else {
+	            if (delta > 0) {
+	                double No1 = (-b + Math.sqrt(delta)) / (2 * a);
+	                double No2 = (-b - Math.sqrt(delta)) / (2 * a);
+	                System.out.println("Phuong trinh nay co 2 nghiem: ");
+	                System.out.println("Nghiem 1: " + No1);
+	                System.out.println("Nghiem 2: " + No2);
+	            } else if (delta == 0) {
+	                double No = -b / (2 * a);
+	                System.out.println("Phuong trinh co 1 nghiem: ");
+	                System.out.println("Nghiem: " + No);
+	            } else {
+	                System.out.println("Phuong trinh nay co nghiem ao.");
+	            }
+	        }
+
+	        scanner.close();
+	}
+}
