@@ -1,0 +1,25 @@
+package Lab_1;
+
+import java.util.Scanner;
+
+public class bai2_2_6a {
+	public static void main(String[] args) {
+		double x;
+		Scanner input = new Scanner(System.in);
+		System.out.println("Nhap vao a: ");
+		double a = input.nextDouble();
+		System.out.println("Nhap vao b: ");
+		double b = input.nextDouble();
+		input.close();
+		if (a == 0) {
+			if(b == 0) {
+				System.out.println("Phuong trinh vo so nghiem.");
+			}else {
+				System.out.println("Phuong trinh vo nghiem.");
+			}
+		}else {
+			x = -b/a;
+			System.out.println("Nghiem cua phuong trinh la: " + x);
+		}
+	}
+}
