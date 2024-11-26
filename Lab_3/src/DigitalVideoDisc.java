@@ -1,5 +1,7 @@
 
 public class DigitalVideoDisc {
+	private static int nbDigitalVideoDiscs = 0;
+	private int id;
 	public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
 		super();
 		this.title = title;
@@ -25,6 +27,7 @@ public class DigitalVideoDisc {
 		super();
 		this.title = title;
 	}
+
 	private String title;
 	private String category;
 	private String director;
