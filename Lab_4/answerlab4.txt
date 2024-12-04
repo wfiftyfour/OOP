@@ -1,0 +1,11 @@
+1. **Lớp nào nên implement `Comparable`?**  
+Lớp `Media` nên implement `Comparable<Media>` vì tất cả các lớp như `Book`, `Disc`, `DigitalVideoDisc`, v.v., đều kế thừa từ `Media`.
+
+2. **Phương thức `compareTo()` nên triển khai như thế nào?**  
+Phương thức `compareTo()` trong `Media` nên sắp xếp theo tiêu đề (alphabetically), rồi đến giá (tăng dần).
+
+3. **Có thể có hai quy tắc sắp xếp trong `Comparable` không?**  
+Không, `Comparable` chỉ hỗ trợ một quy tắc sắp xếp. Để có nhiều quy tắc, cần sử dụng `Comparator`.
+
+4. **DVD có quy tắc sắp xếp khác, làm sao thay đổi mã?**  
+Lớp `DigitalVideoDisc` cần override phương thức `compareTo()` để định nghĩa quy tắc sắp xếp riêng cho DVD.
